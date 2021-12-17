@@ -31,15 +31,34 @@ body {
 carousel
 *****************************************/
 
+.carousel-inner button,
+.carousel-indicators button {
+  background-color: var(--tj-color-accent-primary) !important;
+}
+
+.carousel-inner * {
+  color: var(--tj-color-accent-primary) !important;
+}
+
 .carousel-inner img {
-  height: 30vh;
-  width: 100%;
-  background-color: var(--tj-color-primary, #fd462f);
+  object-fit: contain;
+  max-height: 50vh;
+  width: auto;
 }
 
 /***************************************** 
 home jumbotron
 *****************************************/
+
+.bg-theme {
+  color: var(--tj-color-white);
+  background-image: linear-gradient(
+    135deg,
+    var(--tj-color-primary),
+    var(--tj-color-accent-secondary),
+    var(--tj-color-green)
+  );
+}
 
 #home {
   height: 100vh;
@@ -65,7 +84,9 @@ Button themes
   color: var(--tj-color-white, #fff7f3);
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus,
+.btn:active {
   background-color: var(--tj-color-accent-primary, #006a7d);
   border-color: var(--tj-color-accent-primary, #006a7d);
   color: var(--tj-color-white, #fff7f3);
@@ -75,14 +96,3 @@ Button themes
   background-color: var(--tj-color-accent-secondary);
   border-color: var(--tj-color-accent-secondary);
 }
-
-/**
-tj-color-primary: #FD462F
-tj-color-secondary: #A30000
-tj-color-accent-primary: #006A7D
-tj-color-accent-secondary: #55B8CD
-tj-color-green: #00AB7C
-tj-color-blue: #00A9E9
-tj-color-gray: #457F8C
-tj-color-white: #FFF7F3
-*/

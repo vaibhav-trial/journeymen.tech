@@ -1,3 +1,7 @@
+
+
+/** Scroll behavior of navbar **/
+
 window.onscroll = function () { scrollFunction() };
 
 function vh() {
