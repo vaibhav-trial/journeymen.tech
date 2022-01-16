@@ -96,3 +96,22 @@ Button themes
   background-color: var(--tj-color-accent-secondary);
   border-color: var(--tj-color-accent-secondary);
 }
+
+
+/***************************************** 
+Footer
+*****************************************/
+
+.footer,
+.footer p,
+.footer .btn {
+  text-align: left;
+  font-size: 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.footer a {
+  color: white;
+}
