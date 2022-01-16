@@ -40,6 +40,12 @@ carousel
   color: var(--tj-color-accent-primary) !important;
 }
 
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  position: initial;
+}
+
 .carousel-inner img {
   object-fit: contain;
   max-height: 50vh;
