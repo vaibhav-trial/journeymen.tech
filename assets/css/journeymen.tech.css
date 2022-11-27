@@ -8,7 +8,8 @@ Setup
   --tj-color-accent-primary: #006a7d;
   --tj-color-accent-secondary: #55b8cd;
   --tj-color-green: #00ab7c;
-  --tj-color-blue: #00a9e9;
+  --tj-color-blue: #6c90d0;
+  /* --tj-color-blue: #00a9e9; */
   --tj-color-gray: #457f8c;
   --tj-color-white: #fff7f3;
 }
@@ -60,9 +61,9 @@ home jumbotron
   color: var(--tj-color-white);
   background-image: linear-gradient(
     135deg,
-    var(--tj-color-primary),
+    var(--tj-color-blue),
     var(--tj-color-accent-secondary),
-    var(--tj-color-green)
+    var(--tj-color-primary)
   );
 }
 
@@ -75,9 +76,9 @@ home jumbotron
   color: var(--tj-color-white);
   background-image: linear-gradient(
     135deg,
-    var(--tj-color-primary),
+    var(--tj-color-blue),
     var(--tj-color-accent-secondary),
-    var(--tj-color-green)
+    var(--tj-color-primary)
   );
   overflow-x: hidden;
 }
@@ -120,4 +121,8 @@ Footer
 
 .footer a {
   color: white;
+}
+
+.navbar-logo {
+  max-width: 20vw;
 }
