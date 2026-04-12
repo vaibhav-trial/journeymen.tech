@@ -45,12 +45,17 @@ carousel
   display: flex;
   flex-direction: column;
   position: initial;
+  min-height: 5.5rem;
+}
+
+.carousel-item {
+  min-height: calc(clamp(220px, 50vh, 420px) + 5.5rem);
 }
 
 .carousel-inner img {
   object-fit: contain;
-  max-height: 50vh;
-  width: auto;
+  height: clamp(220px, 50vh, 420px);
+  width: 100%;
 }
 
 /***************************************** 
